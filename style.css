@@ -1,0 +1,218 @@
+/* ===== GENERAL RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('kindergarten.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Helps with loading performance */
+}
+
+
+/* ===== BODY ===== */
+
+body {
+    background-color: #faf8ef;
+    color: #55190e;
+    line-height: 1;
+    font-family: 'MyCustomFont';
+}
+
+
+/* ===== GLOBAL SECTION SPACING ===== */
+
+
+
+
+/* ===== CONTENT WIDTH ===== */
+
+.hero-content,
+.info-content,
+.featured-project-info,
+.pricing-content,
+.contact-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 180px;
+    margin: 1rem 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* ===== INFO SECTION ===== */
+
+.info {
+    padding: 3rem;
+}
+
+.info-content {
+    background-color: #cf7b46;
+    color:#faf8ef;
+    padding: 3rem;
+    border-radius: 30px;
+}
+
+.info h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info ul {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.info li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ===== FEATURED PROJECT ===== */
+
+.featured-project {
+    padding: 2rem;
+}
+
+.featured-project-info {
+    background-color: #cf5d46;
+    color:#faf8ef;
+    padding: 3rem;
+    border-radius: 30px;
+}
+
+.featured-project h2,
+.featured-project h3 {
+    margin-bottom: 1rem;
+}
+
+.featured-project a {
+    color: #faf8ef;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.featured-project a:hover {
+    text-decoration: underline;
+}
+
+.featured-project p {
+    margin-top: 1rem;
+    max-width: 800px;
+}
+
+
+/* ===== PRICING ===== */
+
+.pricing-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#pricing1,
+#pricing2,
+#pricing3 {
+    flex: 1;
+    min-width: 280px;
+
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+
+/* alternating colors */
+
+#pricing1 {
+    background-color: #cf7b46;
+    color: #faf8ef;
+}
+
+#pricing2 {
+    background-color: #cf5d46;
+    color: #faf8ef;
+}
+
+#pricing3 {
+    background-color: #cf7b46;
+    color: #faf8ef;
+}
+
+
+.pricing h3 {
+    font-size: 2rem;
+}
+
+.pricing h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.pricing ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pricing li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .pricing-content {
+        flex-direction: column;
+    }
+
+}
